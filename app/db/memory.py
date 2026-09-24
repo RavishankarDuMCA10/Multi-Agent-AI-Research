@@ -5,7 +5,7 @@ from datetime import datetime
 import redis.asyncio as aioredis
 from sentence_transformers import SentenceTransformer
 from app.config import Config
-from app.pool import get_pool
+from app.db.pool import get_pool
 
 _model = SentenceTransformer("all-MiniLM-L6-v2")
 
